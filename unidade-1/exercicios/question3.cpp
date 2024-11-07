@@ -95,16 +95,25 @@ int Ordenacao::min(int a, int b){
  * @param n O tamanho do vetor.
  */
 void Ordenacao::bubblesort_iterativo(int *v, int n){
-    bool conflito;
-    do{
-        conflito = false;
-        for(int i = 1; i < n; i++){
-            if (v[i-1] > v[i]){
-                trocar(v, i-1, i);
-                conflito = true;
+     bool trocou = true;
+    int i = 0;
+
+    while (i < n - 1) {
+        if (trocou) {
+            trocou = false;
+            int j = 0;
+
+            while (j < (n - i - 1)) {
+                if (v[j] > v[j + 1]) {
+                    trocar(v, j, j + 1);
+
+                    trocou = true;
+                }
+                j++;
             }
         }
-    }while (conflito);
+        i++;
+    }
 }
 
 /**
