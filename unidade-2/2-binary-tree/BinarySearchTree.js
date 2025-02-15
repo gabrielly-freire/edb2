@@ -11,7 +11,7 @@ export default class BinarySearchTree {
     }
 
     /**
-     * Percurso em ordem na árvore binária de busca
+     * Percurso em ordem simetrica na árvore binária de busca
      * @param {*} callback 
      */
     inOrderTraverse(callback) {
@@ -57,6 +57,32 @@ export default class BinarySearchTree {
             callback(node.key);
         }
     }
+
+    /**
+     *  Percurso nível-ordem na árvore binária de busca
+     * @param {*} callback 
+     */
+    levelOrderTraverse(callback) {
+        if (!this.root) return;
+
+        const queue = [];
+        queue.push(this.root); 
+
+        while (queue.length > 0) {
+            const currentNode = queue.shift(); 
+            
+            callback(currentNode.key);
+
+        
+            if (currentNode.left) {
+                queue.push(currentNode.left);
+            }
+            if (currentNode.right) {
+                queue.push(currentNode.right);
+            }
+        }
+    }
+
 
     /**
      * Busca por um elemento na árvore binária de busca

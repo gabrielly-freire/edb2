@@ -100,7 +100,6 @@ export default class AVLTree extends BinarySearchTree {
             return node;
         }
 
-        // Verifica se a árvore está balanceada
         const balanceState = this.getBalanceFactor(node);
         if (balanceState === BalanceFactor.UNBALANCED_LEFT) {
             if (this.compareFn(key, node.left.key) === Compare.LESS_THAN) {
@@ -179,4 +178,5 @@ export default class AVLTree extends BinarySearchTree {
             return true;
         }
     }
+
 }
