@@ -17,6 +17,8 @@ Disciplina de Estrutura de Dados Básicas II do curso Bacharelado em Tecnologia 
    4. Teorema Mestre
 3. Análise de Algoritmos
 
+O trabalho desta unidade está disponível em [unidade-1](unidade-1).
+
 ### Unidade II - ÁRVORES
 
 1. Conceitos iniciais
@@ -29,6 +31,8 @@ Disciplina de Estrutura de Dados Básicas II do curso Bacharelado em Tecnologia 
 5. Árvore Rubro-Negra
    1. Busca/Inserção/Remoção
 
+O trabalho desta unidade está disponível em [unidade-2](https://github.com/gabrielly-freire/edb-unidade2).
+
 ### Unidade III - + ÁRVORES
 
 1. Árvores B
@@ -37,9 +41,5 @@ Disciplina de Estrutura de Dados Básicas II do curso Bacharelado em Tecnologia 
    1. Busca/Inserção/Remoção
 3. Conjuntos Disjuntos
 
-## Datas Importantes
+O trabalho desta unidade está disponível em [unidade-3](https://github.com/gabrielly-freire/edb-unidade3).
 
-- Entrega primeira unidade: 31/10
-- Entrega segunda unidade: 19/12
-- Entrega terceira unidade: 21/01 - 28/01
-- Reposição: 30/01
